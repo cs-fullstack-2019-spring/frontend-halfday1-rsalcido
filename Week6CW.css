@@ -1,0 +1,67 @@
+h1{
+    /*text-align: center;*/
+    /*padding-top: 100px;*/
+}
+
+/*grid*/
+.grid-container {
+    display: grid;
+    grid-template-columns: 3fr  3fr 3fr;
+    grid-template-areas:
+            'header header header'
+            'firstcolumn main rightcolumn'
+            'firstcolumn main rightcolumn'
+            'firstcolumn main rightcolumn'
+            '  .      middlebottom footer';
+
+
+
+            /*'footer footer footer';*/
+
+    /*background-color: #2196F3;*/
+    /*padding:none;*/
+
+
+/*alignment of the grids    */
+}
+
+.item1 { grid-area: header;
+    text-align: center;
+    border: none;
+
+}
+.firstcolumn { grid-area: firstcolumn;
+    text-align: center;
+    border: solid black;
+    font-size: 100px;
+
+}
+.middlecolumn { grid-area: main;
+    text-align: center;
+    border: solid black;
+}
+.middlebottom{grid-area: middlebottom;
+    text-align: center;
+    border:solid black ;
+
+}
+.rightcolumn {grid-area:rightcolumn;
+    text-align: center;
+    border: solid black;
+    font-size: 100px;
+}
+.footer{
+    grid-area: footer;
+    text-align: center;
+    border:solid black ;
+
+}
+
+
+
+/*.item4 { grid-area: right;*/
+    /*border: solid black;*/
+/*}*/
+/*.item5 { grid-area: footer;*/
+    /*border: solid black;*/
+/*}*/
